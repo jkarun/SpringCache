@@ -42,6 +42,12 @@ public class SpringCacheTest {
 		logger.info("IPhone [after refresh]->" + service.getByName("IPhone"));
 		logger.info("IPhone [after refresh]->" + service.getByName("IPhone"));
 		logger.info("IPhone [after refresh]->" + service.getByName("IPhone"));
+		
+		logger.info("*********************JSON values**********************");
+		logger.info(service.getJson());
+		logger.info(service.getJson());
+		logger.info(service.getJson());
+		service.clearJson();
 
 		((AbstractApplicationContext) context).close();
 		
